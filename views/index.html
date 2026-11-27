@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIGBRU Technology Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>MIGBRU</h1>
+
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/products">Productos</a></li>
+                <li><a href="/search">Buscar</a></li>
+                <li><a href="/about">Nosotros</a></li>
+                <li><a href="/login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenido a MIGBRU Technology Store</h2>
+            <p>Encuentra la tecnología que necesitas en un solo lugar.</p>
+            <a href="/products">Ver productos</a>
+        </section>
+
+        <section class="weather-section">
+            <h2>Clima de tu ubicación</h2>
+
+            <p id="weather-city">Buscando ubicación...</p>
+            <p id="weather-temperature">-- °C</p>
+            <p id="weather-description">Esperando información del clima...</p>
+            <p id="weather-humidity">Humedad: --</p>
+            <p id="weather-wind">Viento: --</p>
+        </section>
+
+        <section class="location-section">
+            <h2>Tu ubicación</h2>
+            <p id="user-location">Esperando permiso de ubicación...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MIGBRU Technology Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/weather.js"></script>
+
+</body>
+</html>

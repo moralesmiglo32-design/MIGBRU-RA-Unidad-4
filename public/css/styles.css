@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background-color: #101827;
+    padding: 20px 5%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav h1 {
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Contenido principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.hero {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #101827;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+.weather-section,
+.location-section {
+    background-color: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.weather-section h2,
+.location-section h2 {
+    margin-bottom: 15px;
+    color: #172554;
+}
+
+.weather-section p,
+.location-section p {
+    margin: 10px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #101827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* Catalogo de productos (Las tarjetas se acomodarán automáticamente en columnas según el tamaño de la pantalla)*/
+.products-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products-header h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #0284c7;
+    font-size: 20px;
+    font-weight: bold;
+}
